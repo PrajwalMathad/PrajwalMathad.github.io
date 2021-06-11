@@ -4,8 +4,8 @@ const Home = () => {
     return (
         <div className="main-container">
             <div id="myTopnav" class="navigation-bar">
-                <a href="#projects" >Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="#/projects" >Projects</a>
+                <a href="#/contact">Contact</a>
             </div>
             <div className="banner">
                 <div className="primary-text">
