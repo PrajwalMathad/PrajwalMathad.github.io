@@ -12,7 +12,7 @@ const Home = () => {
                     Prajwal Mathad
                 </div>
                 <div className="secondary-text">
-                    Web UI Developer ! Game on
+                    Web UI Developer!
                 </div>
             </div>
         </div>
