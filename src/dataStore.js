@@ -37,13 +37,13 @@ const DataStore = {
             place: "Bangalore",
             dates: "Feb 2017 - Jul 2017",
             description: [
-                "Worked with the global business solution steam of Walmart",
-                "Worked on SAP UI5, SAP ABAP, SAp Fiori to develop web applications"
+                "Worked with the global business solutions team of Walmart",
+                "Worked on SAP UI5, SAP ABAP, SAP Fiori to develop web applications"
             ]
         }
     ],
     ILove: [
-        "building websites", "sketching", "cars", "dogs", "technology", "being an engineer"
+        "building websites", "technology", "being an engineer", "sketching", "cars", "dogs", 
     ]
 }
 export default DataStore;
