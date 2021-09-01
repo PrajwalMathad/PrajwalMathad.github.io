@@ -44,6 +44,35 @@ const DataStore = {
     ],
     ILove: [
         "building websites", "technology", "being an engineer", "sketching", "cars", "dogs", 
+    ],
+    themes: [
+        {
+            "id": 1,
+            "name": "NeonGreen",
+            "primaryAccentColor" : "#56ffcc",
+            "secondaryAccentColor" : "#e0e5f5",
+            "secondaryAccentColor2" : "#ccd6f6",
+            "backgroundGradient1" : "#00002d",
+            "backgroundGradient2" : "#141e61"
+        },
+        {
+            "id": 2,
+            "name": "MaroonYellow",
+            "primaryAccentColor" : "#fff8adf8",
+            "secondaryAccentColor" : "#f3c3c3",
+            "secondaryAccentColor2" : "#EFB7B7",
+            "backgroundGradient1" : "#000000",
+            "backgroundGradient2" : "#470033"
+        },
+        {
+            "id": 3,
+            "name": "DarkPurple",
+            "primaryAccentColor" : "#fffbfd",
+            "secondaryAccentColor" : "#ffb8f6",
+            "secondaryAccentColor2" : "#ff81de",
+            "backgroundGradient1" : "#000000",
+            "backgroundGradient2" : "#52057B"
+        }
     ]
 }
 export default DataStore;

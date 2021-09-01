@@ -23,7 +23,7 @@ const Experience = () => {
     }
 
     return (
-        <div className="exp-container section-container">
+        <div id="experience" className="exp-container section-container">
             <div className="section-header">Experience </div>
             {experienceDiv()}
         </div>

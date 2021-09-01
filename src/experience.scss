@@ -7,14 +7,14 @@
         display: flex;
         flex-direction: row;
         .company {
-          color:$primary-accent-color;
+          color:var(--primary-accent-color);
           font-weight: 300;
           text-decoration: none;          
         }
       }
       .date {
         font-size: 2vmin;
-        color:$secondary-accent-color;
+        color:var(--secondary-accent-color2);
         padding: 6px 0;
       }
       .exp-description{
@@ -23,12 +23,29 @@
           display: flex;
           flex-direction: row;
           .fas {
-            color: $primary-accent-color;
+            color: var(--primary-accent-color);
             padding-right: 8px;
           }
           .single-point-text {
             display: flex;
             flex-wrap: wrap;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .single-exp {
+        .title {
+          font-size: 3vmin;
+        }
+        .date {
+          font-size: 2.3vmin;
+        }
+        .exp-description{
+          .single-point {
+            .single-point-text {
+              font-size: 2.6vmin;
+            }
           }
         }
       }

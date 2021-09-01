@@ -1,14 +1,11 @@
-$primary-accent-color :  #56ffcc;
-$secondary-accent-color: #e0e5f5;
-$secondary-accent-color2: #ccd6f6;
 .body {
   overflow-x: hidden;
 }
 .main-container {    
-  background-image: linear-gradient(to bottom right, #00002d, #141E61);
-  padding: 2%;
+  background-image: linear-gradient(to bottom right, var(--background-gradient1),var(--background-gradient2));
+  padding: 2rem 1rem;
   min-height: 100vh;
-  color: $secondary-accent-color;
+  color: var(--secondary-accent-color);
   display: flex;
   flex-direction: row;
   position: relative;
@@ -18,55 +15,90 @@ $secondary-accent-color2: #ccd6f6;
   // font-family: 'Merriweather', serif;
   // font-family: 'Rubik', sans-serif;
 
+  .icons{
+    font-size: 3vmin;
+    margin: 3vh 2vh;
+    color: var(--secondary-accent-color);
+    &:hover {
+      color: var(--primary-accent-color);
+      cursor: pointer;
+    }
+  }
+
   .left-container {
-    width: 100%;
+    width: 6vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    .navbar{
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      height: -webkit-fill-available;
+      justify-content: center;
+      align-items: center;
+      &::before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 105px;
+        margin: 0px auto;
+        background-color: var(--primary-accent-color);
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 105px;
+        margin: 0px auto;
+        background-color: var(--primary-accent-color);
+      }
+    }
     
   }
   .middle-container { 
     display: flex;
     flex-direction: column;
-    width: 80vw;
+    // width: 80vw;
     .banner {
-      margin-left: 2%;
+      margin: 14% 5%;
       height: 45vh;
       font-family: 'Quicksand', sans-serif;
       .salutation {
-        font-size: 4vmin;
+        font-size: 5vmin;
         font-weight: 300;
-        color: $secondary-accent-color2;
+        color: var(--secondary-accent-color2);
       }
       .primary-text {
-        font-size: 10vmin;
+        font-size: 12vmin;
         font-weight: 300;
-        color: $primary-accent-color;
+        color: var(--primary-accent-color);
       }
       .secondary-text {
-        font-size: 3vmin;
+        font-size: 4vmin;
         font-weight: 300;
         display: flex;
-        color: $secondary-accent-color2;
+        color: var(--secondary-accent-color2);
         width: fit-content;
       }
       .intro {
         width: 60vw;
-        font-size: 3vmin;
+        font-size: 4vmin;
         padding: 20px 0;
       }
     }
   
     .secondary-container {
-      margin-left: 2%;
+      margin-left: 5%;
       font-family: 'Rubik', sans-serif;
       .section-container {
         float: left;
         width: 75vw;
         .section-header {
           font-size: 5vmin;
-          color: $primary-accent-color;
+          color: var(--primary-accent-color);
         }
       }
     }
@@ -75,14 +107,14 @@ $secondary-accent-color2: #ccd6f6;
       font-size: 2vmin;
       display: flex;
       margin-top: 8vh;
-      color: $secondary-accent-color2;
+      color: var(--primary-accent-color);
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
     }
   }
   .right-container {
-    width: 100%;
+    // width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -91,23 +123,15 @@ $secondary-accent-color2: #ccd6f6;
       flex-direction: column;
       align-items: center;
       position: fixed;
-      margin: 8em 0 0;
-      .icons{
-        font-size: 3vmin;
-        margin: 3vh;
-        color: $secondary-accent-color;
-        &:hover {
-          color: $primary-accent-color;
-          cursor: pointer;
-        }
-      }
+      height: -webkit-fill-available;  
+      justify-content: center;
       &::before {
         content: "";
         display: block;
         width: 1px;
         height: 105px;
         margin: 0px auto;
-        background-color: $primary-accent-color;
+        background-color: var(--primary-accent-color);
       }
       &::after {
         content: "";
@@ -115,7 +139,7 @@ $secondary-accent-color2: #ccd6f6;
         width: 1px;
         height: 105px;
         margin: 0px auto;
-        background-color: $primary-accent-color;
+        background-color: var(--primary-accent-color);
       }
     }
   }
@@ -134,10 +158,23 @@ $secondary-accent-color2: #ccd6f6;
 @media only screen and (max-width: 600px) {
   .main-container {
     padding: 10% 3%;
-    .banner {
-      height: 35vh;
-      .intro {
-        width: 75vw;
+    .middle-container { 
+      .banner {
+        margin: 5%;
+        height: 28vh;
+        .salutation {
+          font-size: 4vmin;
+        }
+        .primary-text {
+          font-size: 10vmin;
+        }
+        .secondary-text {
+          font-size: 3vmin;
+        }
+        .intro {
+          font-size: 3vmin;
+          width: 75vw;
+        }
       }
     }
   }
