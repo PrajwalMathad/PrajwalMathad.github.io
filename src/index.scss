@@ -9,6 +9,9 @@ $background-gradient2: #141e61;
 #root {
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;

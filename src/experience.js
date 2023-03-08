@@ -24,7 +24,7 @@ const Experience = () => {
 
     return (
         <div id="experience" className="exp-container section-container">
-            <div className="section-header">Experience </div>
+            <div className="section-header">Work Experience </div>
             {experienceDiv()}
         </div>
     )

@@ -1,16 +1,20 @@
 .exp-container {
     .single-exp {
       padding: 1rem 0;
+      .margin-left-10 {
+        margin-left: 10px;
+      }
       .title {
         font-size: 3vmin;
         font-weight: 600;
         display: flex;
         flex-direction: row;
-        .company {
-          color:var(--primary-accent-color);
-          font-weight: 300;
-          text-decoration: none;          
-        }
+        
+      }
+      .company {
+        color:var(--primary-accent-color);
+        font-weight: 300;
+        text-decoration: none;          
       }
       .date {
         font-size: 2vmin;
@@ -32,6 +36,15 @@
           }
         }
       }
+      .edu-date {
+        font-size: 1.8vmin;
+      }
+      .gpa {
+        font-size: 2.8vmin;
+        font-weight: 300;
+        margin-left: 4vw;
+        color:var(--secondary-accent-color2);
+      }
     }
     @media only screen and (max-width: 600px) {
       .single-exp {
@@ -40,6 +53,9 @@
         }
         .date {
           font-size: 2.3vmin;
+        }
+        .college {
+          font-size: 2.6vmin;
         }
         .exp-description{
           .single-point {
