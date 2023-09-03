@@ -1,12 +1,23 @@
 const DataStore = {
     experiences: [
         {
+            type: "Internship",
+            title: "Full Stack Engineer, Co-op",
+            company: "Fidelity Investments",
+            url: "https://www.fidelity.com/",
+            place: "Boston",
+            dates: "Jul 2023 - Present",
+            description: [
+                "Working as a Full Stack Engineer with the Defined innovation squad in Workplace Investments group."
+            ]
+        },
+        {
             type: "Job",
             title: "Graduate Teaching Assistant",
             company: "Khoury College Of Computer Sciences",
             url: "https://www.khoury.northeastern.edu/",
             place: "Boston",
-            dates: "Jan 2023 - Present",
+            dates: "Jan 2023 - May 2023",
             description: [
                 "Working as a Teaching Assistant for the course 'Foundations of Software Engineering'.",
                 "Mentoring and guiding 20 students in projects, grading assignments, and assisting the professor."
@@ -20,11 +31,11 @@ const DataStore = {
             place: "Bangalore",
             dates: "Aug 2018 - Aug 2022",
             description: [
-                "Worked on building the next gen middleware cloud applications",
-                "Worked on different platforms and frameworks like React, Angular, Node, JavaScript, Java, Docker, Kubernetes",
-                "Co-ordinated with multiple teams of engineers and designers",
-                "Writing efficient, readable, reusable, robust, modularized code",
-                "Used testing libraries like Jest, Protractor, React testing library"
+                "Worked on building the next gen middleware cloud applications.",
+                "Worked on different platforms and frameworks like React, Angular, Node, JavaScript, Java, Docker, Kubernetes.",
+                "Co-ordinated with multiple teams of engineers and designers.",
+                "Writing efficient, readable, reusable, robust, modularized code.",
+                "Used testing libraries like Jest, Protractor, React testing library."
             ]
         },
         {
@@ -35,10 +46,10 @@ const DataStore = {
             place: "Hubli",
             dates: "Aug 2017 - Apr 2018",
             description: [
-                "Built an end-to-end pipeline for 3D reconstruction of statues with images",
-                "Capture images of stautes with a drone and refine them",
-                "Worked on Image processing, Computer vision, Machine learning",
-                "Programming languages and Tools used : Python, C++, Matlab, VisualSFM, OpenMVG, OpenMVS",
+                "Built an end-to-end pipeline for 3D reconstruction of statues with images.",
+                "Capture images of stautes with a drone and refine them.",
+                "Worked on Image processing, Computer vision, Machine learning.",
+                "Programming languages and Tools used : Python, C++, Matlab, VisualSFM, OpenMVG, OpenMVS.",
             ]
         },
         {
@@ -49,8 +60,8 @@ const DataStore = {
             place: "Bangalore",
             dates: "Feb 2017 - Jul 2017",
             description: [
-                "Worked with the global business solutions team of Walmart",
-                "Worked on SAP UI5, SAP ABAP, SAP Fiori to develop web applications"
+                "Worked with the global business solutions team of Walmart.",
+                "Worked on SAP UI5, SAP ABAP, SAP Fiori to develop web applications."
             ]
         }
     ],
