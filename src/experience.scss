@@ -1,70 +1,94 @@
 .exp-container {
-    .single-exp {
-      padding: 1rem 0;
-      .margin-left-10 {
-        margin-left: 10px;
-      }
-      .title {
-        font-size: 3vmin;
-        font-weight: 600;
-        display: flex;
-        flex-direction: row;
-        
-      }
-      .company {
-        color:var(--primary-accent-color);
-        font-weight: 300;
-        text-decoration: none;          
-      }
-      .date {
-        font-size: 1.7vmin;
-        color:var(--secondary-accent-color2);
-        padding: 6px 0;
-      }
-      .exp-description{
-        font-size: 2vmin;
-        .single-point {
-          padding: 6px 0;
-          display: flex;
-          flex-direction: row;
-          .fas {
-            color: var(--primary-accent-color);
-            padding-right: 8px;
-          }
-          .single-point-text {
-            display: flex;
-            flex-wrap: wrap;
-          }
-        }
-      }
-      .edu-date {
-        font-size: 1.8vmin;
-      }
-      .gpa {
-        font-size: 2.8vmin;
-        font-weight: 300;
-        margin-left: 4vw;
-        color:var(--secondary-accent-color2);
+  .single-exp {
+    padding: 1rem 0;
+
+    .margin-left-10 {
+      margin-left: 10px;
+    }
+
+    .title {
+      font-size: 3vmin;
+      font-weight: 600;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+
+      .icon {
+        font-size: smaller;
       }
     }
-    @media only screen and (max-width: 600px) {
-      .single-exp {
-        .title {
-          font-size: 3vmin;
+
+    .stack {
+      font-size: 2vmin;
+      margin: 8px 0;
+      color: var(--primary-accent-color);
+    }
+
+    .company {
+      color: var(--primary-accent-color);
+      font-weight: 300;
+      text-decoration: none;
+    }
+
+    .date {
+      font-size: 1.7vmin;
+      color: var(--secondary-accent-color2);
+      padding: 6px 0;
+    }
+
+    .exp-description {
+      font-size: 2vmin;
+
+      .single-point {
+        padding: 6px 0;
+        display: flex;
+        flex-direction: row;
+
+        .fas {
+          color: var(--primary-accent-color);
+          padding-right: 8px;
         }
-        .date {
-          font-size: 2.3vmin;
+
+        .single-point-text {
+          display: flex;
+          flex-wrap: wrap;
         }
-        .college {
-          font-size: 2.6vmin;
-        }
-        .exp-description{
-          .single-point {
-            .single-point-text {
-              font-size: 2.6vmin;
-            }
+      }
+    }
+
+    .edu-date {
+      font-size: 1.8vmin;
+    }
+
+    .gpa {
+      font-size: 2.8vmin;
+      font-weight: 300;
+      margin-left: 4vw;
+      color: var(--secondary-accent-color2);
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .single-exp {
+      .title {
+        font-size: 3vmin;
+      }
+
+      .date {
+        font-size: 2.3vmin;
+      }
+
+      .college {
+        font-size: 2.6vmin;
+      }
+
+      .exp-description {
+        .single-point {
+          .single-point-text {
+            font-size: 2.6vmin;
           }
         }
       }
     }
   }
+}

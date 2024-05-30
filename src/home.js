@@ -49,7 +49,6 @@ const Home = () => {
                         <span>I love&nbsp;</span><Typewriter options={{ strings: DataStore.ILove, autoStart: true, loop: true }} />
                     </div>
                     <div className="intro">
-                        I am a Computer Science Graduate student @ Northeastern University, Boston.
                         I aspire to work on building scalable applications that can solve complex problems.
                         Thanks for stopping by. Lets catch up and talk tech!
                     </div>

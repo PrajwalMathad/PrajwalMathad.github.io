@@ -6,9 +6,11 @@ const DataStore = {
             company: "Fidelity Investments",
             url: "https://www.fidelity.com/",
             place: "Boston",
-            dates: "Jul 2023 - Present",
+            dates: "Jul 2023 - Dec 2024",
             description: [
-                "Working as a Full Stack Engineer with the Defined innovation squad in Workplace Investments group."
+                "Worked on building a web application to ease the processing of retirement plans.",
+                "As a Full stack engineer, worked on all the aspects of the application development. ",
+                "Writing efficient, readable, reusable, robust, modularized code.",
             ]
         },
         {
@@ -17,9 +19,9 @@ const DataStore = {
             company: "Khoury College Of Computer Sciences",
             url: "https://www.khoury.northeastern.edu/",
             place: "Boston",
-            dates: "Jan 2023 - May 2023",
+            dates: "Jan 2023 - May 2024",
             description: [
-                "Working as a Teaching Assistant for the course 'Foundations of Software Engineering'.",
+                "Worked as a Teaching Assistant for the course 'Foundations of Software Engineering'.",
                 "Mentoring and guiding 20 students in projects, grading assignments, and assisting the professor."
             ]
         },
@@ -70,9 +72,9 @@ const DataStore = {
             college: "Khoury College of Computer sciences",
             university: "Northeastern University",
             url: "https://www.northeastern.edu/",
-            dates: "Sept 2022 - May 2024(Expected)",
+            dates: "Sept 2022 - May 2024",
             course: "Master of Science in Computer Science",
-            gpa: ""
+            gpa: "3.89/4"
         },
         {
             college: "B.V.Bhoomareddy College of Engineering and Technology",
@@ -85,7 +87,16 @@ const DataStore = {
     ],
     projects: [
         {
+            "title": "Igloo: Hotel Booking Application",
+            "stack": "React, Redux, Node.js, Express.js, MongoDb, Render, Netlify",
+            "description": "Built a hotel booking application using MERN stack and hosted on Render and Netlify. "+
+            "Salient features : login/register, views based on user roles(customer/owner/admin), CRUD operation for bookings.",
+            "url": "https://main--sage-marshmallow-1c700a.netlify.app/#/Home",
+            "github": "https://github.com/PrajwalMathad/igloo-hotel-booking-website"
+        },
+        {
             "title": "Covid 19 Dashboard",
+            "stack": "React, Redux,  GitHub, GH Pages",
             "description": "Its a dashboard showing the statistics of COVID19 disease effect over the world. "+
             "The COVID19 disease first observed in China in December 2019, is a disease that causes respiratory "+
             "illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty "+
@@ -96,6 +107,7 @@ const DataStore = {
         },
         {
             "title": "Stockbroker Application",
+            "stack": "MVC, Java",
             "description": "Developed a Stockbroker application using the MVC design pattern. The application would"+
             " allow users to create portfolios, buy/sell stocks, and view stock details and values on a given date using real-time data.",
             "url": null,

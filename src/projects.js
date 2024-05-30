@@ -9,12 +9,13 @@ const Projects = () => {
                 <div className="single-exp">
                     <div className="title">{project.title}
                         {project.url ? <a href={project.url} className="company margin-left-10" target="_blank" rel="noreferrer">{" "}
-                            <i className=" fa fa-link" aria-hidden="true"></i>
+                            <i className="icon fa fa-link" aria-hidden="true"></i>
                         </a> : null}
                         {project.github ? <a href={project.github} className="company margin-left-10" target="_blank" rel="noreferrer">
-                            <i class="fab fa-github-square"></i>
+                            <i class="icon fab fa-github-square"></i>
                         </a> : null}
                     </div>
+                    <div className="stack"> {project.stack}</div>
                     <div className="exp-description">
                         {project.description}
                     </div>
