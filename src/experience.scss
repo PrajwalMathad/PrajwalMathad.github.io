@@ -33,7 +33,7 @@
     .date {
       font-size: 1.7vmin;
       color: var(--secondary-accent-color2);
-      padding: 6px 0;
+      padding: 0.5vh 0;
     }
 
     .exp-description {
@@ -70,12 +70,14 @@
 
   @media only screen and (max-width: 600px) {
     .single-exp {
+      padding: 0.4rem 0;
       .title {
         font-size: 3vmin;
       }
 
       .date {
         font-size: 2.3vmin;
+        padding: 0;
       }
 
       .college {
