@@ -4,6 +4,7 @@ import DataStore from './dataStore';
 import Education from './education';
 import Experience from './experience';
 import Projects from './projects';
+import Skills from './skills';
 
 const Home = () => {
     const [theme, setTheme] = useState(1);
@@ -31,7 +32,7 @@ const Home = () => {
             <div className="left-container">
                 <ul className="navbar">
                     <li className="nav-item">
-                        <a href="#experience" className="nav-link"> <i class="icons fas fa-briefcase"></i></a>
+                        <a href="#skills" className="nav-link"> <i class="icons fas fa-briefcase"></i></a>
                     </li>
                     <li className="nav-item">
                         <a href="#education" className="nav-link"> <i class="icons fas fa-user-graduate"></i></a>
@@ -43,7 +44,7 @@ const Home = () => {
             </div>
             <div className="middle-container">
                 <div className="banner">
-                    <div className="salutation"> Hey there! I am</div>
+                    <div className="secondary-text"> Hey there! I am</div>
                     <div className="primary-text">Prajwal Mathad</div>
                     <div className="secondary-text" title="🤖: Its gonna take some time to typeout everything! This guy loves a lot of shit">
                         <span>I love&nbsp;</span><Typewriter options={{ strings: DataStore.ILove, autoStart: true, loop: true }} />
@@ -54,6 +55,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="secondary-container">
+                    <Skills />
                     <Experience />
                     <div className="separator"></div>
                     <Education />

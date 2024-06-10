@@ -1,4 +1,46 @@
 const DataStore = {
+    skills: [
+        {
+            name: 'Javascript',
+            value: '100'
+        },
+        {
+            name: 'Java',
+            value: '95'
+        },
+        {
+            name: 'Typescript',
+            value: '100'
+        },
+        {
+            name: 'React',
+            value: '95'
+        },
+        {
+            name: 'Angular',
+            value: '92'
+        },
+        {
+            name: 'NodeJs',
+            value: '90'
+        },        
+        {
+            name: 'MongoDB',
+            value: '88'
+        },        
+        {
+            name: 'PostgreSQL',
+            value: '82'
+        },       
+        {
+            name: 'Docker',
+            value: '80'
+        },
+        {
+            name: 'AWS',
+            value: '80'
+        }
+    ],
     experiences: [
         {
             type: "Internship",
@@ -89,27 +131,27 @@ const DataStore = {
         {
             "title": "Igloo: Hotel Booking Application",
             "stack": "React, Redux, Node.js, Express.js, MongoDb, Render, Netlify",
-            "description": "Built a hotel booking application using MERN stack and hosted on Render and Netlify. "+
-            "Salient features : login/register, views based on user roles(customer/owner/admin), CRUD operation for bookings.",
+            "description": "Built a hotel booking application using MERN stack and hosted on Render and Netlify. " +
+                "Salient features : login/register, views based on user roles(customer/owner/admin), CRUD operation for bookings.",
             "url": "https://main--sage-marshmallow-1c700a.netlify.app/#/Home",
             "github": "https://github.com/PrajwalMathad/igloo-hotel-booking-website"
         },
         {
             "title": "Covid 19 Dashboard",
             "stack": "React, Redux,  GitHub, GH Pages",
-            "description": "Its a dashboard showing the statistics of COVID19 disease effect over the world. "+
-            "The COVID19 disease first observed in China in December 2019, is a disease that causes respiratory "+
-            "illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty "+
-            "breathing. This dashboard gives the count of confirmed, deceased cases of the disease across the globe and in a particular "+
-            "country. The graph plot is based on the county specific data over a period of 30 days.",
+            "description": "Its a dashboard showing the statistics of COVID19 disease effect over the world. " +
+                "The COVID19 disease first observed in China in December 2019, is a disease that causes respiratory " +
+                "illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty " +
+                "breathing. This dashboard gives the count of confirmed, deceased cases of the disease across the globe and in a particular " +
+                "country. The graph plot is based on the county specific data over a period of 30 days.",
             "url": "https://prajwalmathad.github.io/covid19-dashboard/",
             "github": "https://github.com/PrajwalMathad/covid19-dashboard"
         },
         {
             "title": "Stockbroker Application",
             "stack": "MVC, Java",
-            "description": "Developed a Stockbroker application using the MVC design pattern. The application would"+
-            " allow users to create portfolios, buy/sell stocks, and view stock details and values on a given date using real-time data.",
+            "description": "Developed a Stockbroker application using the MVC design pattern. The application would" +
+                " allow users to create portfolios, buy/sell stocks, and view stock details and values on a given date using real-time data.",
             "url": null,
             "github": null
         }

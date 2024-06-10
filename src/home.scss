@@ -1,8 +1,9 @@
 .body {
   overflow-x: hidden;
 }
-.main-container {    
-  background-image: linear-gradient(to bottom right, var(--background-gradient1),var(--background-gradient2));
+
+.main-container {
+  background-image: linear-gradient(to bottom right, var(--background-gradient1), var(--background-gradient2));
   padding: 2rem 1rem;
   min-height: 100vh;
   color: var(--secondary-accent-color);
@@ -10,15 +11,16 @@
   flex-direction: row;
   position: relative;
   justify-content: space-between;
-  // font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   // font-family: 'Raleway', sans-serif;
   // font-family: 'Merriweather', serif;
   // font-family: 'Rubik', sans-serif;
 
-  .icons{
+  .icons {
     font-size: 3vmin;
     margin: 3vh 2vh;
     color: var(--secondary-accent-color);
+
     &:hover {
       color: var(--primary-accent-color);
       cursor: pointer;
@@ -30,16 +32,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    .navbar{
+
+    .navbar {
       list-style: none;
       padding: 0;
       display: flex;
       flex-direction: column;
       position: fixed;
-      height: -moz-available;          /* WebKit-based browsers will ignore this. */
+      height: -moz-available;
+      /* WebKit-based browsers will ignore this. */
       height: -webkit-fill-available;
       justify-content: center;
       align-items: center;
+
       &::before {
         content: "";
         display: block;
@@ -48,6 +53,7 @@
         margin: 0px auto;
         background-color: var(--primary-accent-color);
       }
+
       &::after {
         content: "";
         display: block;
@@ -57,27 +63,29 @@
         background-color: var(--primary-accent-color);
       }
     }
-    
+
   }
-  .middle-container { 
+
+  .middle-container {
     display: flex;
     flex-direction: column;
-    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -moz-available;
+    /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available;
+
     .banner {
-      margin: 14% 5%;
-      height: 45vh;
-      font-family: 'Quicksand', sans-serif;
-      .salutation {
-        font-size: 5vmin;
-        font-weight: 300;
-        color: var(--secondary-accent-color2);
-      }
+      display: flex;
+      margin: 0 5%;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+
       .primary-text {
         font-size: 12vmin;
         font-weight: 300;
         color: var(--primary-accent-color);
       }
+
       .secondary-text {
         font-size: 4vmin;
         font-weight: 300;
@@ -85,31 +93,30 @@
         color: var(--secondary-accent-color2);
         width: fit-content;
       }
+
       .intro {
         width: 60vw;
         font-size: 4vmin;
         padding: 20px 0;
       }
     }
-  
+
     .secondary-container {
       margin-left: 5%;
-      font-family: 'Rubik', sans-serif;
+
       .section-container {
         float: left;
         width: 75vw;
         margin-bottom: 2vw;
+
         .section-header {
-          font-size: 5vmin;
+          font-size: 4vmin;
           color: var(--primary-accent-color);
         }
       }
     }
-    .separator {
 
-    }
     .footer {
-      font-family: 'Rubik', sans-serif;
       font-size: 2vmin;
       display: flex;
       margin-top: 8vh;
@@ -119,18 +126,22 @@
       justify-content: flex-end;
     }
   }
+
   .right-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 5vw;
-    height: -moz-available;          /* WebKit-based browsers will ignore this. */
+    height: -moz-available;
+    /* WebKit-based browsers will ignore this. */
     height: -webkit-fill-available;
+
     .theme-changer-icon {
       display: flex;
       flex-direction: column;
       position: fixed;
     }
+
     .contacts {
       display: flex;
       flex-direction: column;
@@ -138,9 +149,11 @@
       position: fixed;
       top: 6rem;
       width: inherit;
-      height: -moz-available;          /* WebKit-based browsers will ignore this. */
+      height: -moz-available;
+      /* WebKit-based browsers will ignore this. */
       height: -webkit-fill-available;
       justify-content: center;
+
       &::before {
         content: "";
         display: block;
@@ -149,6 +162,7 @@
         margin: 0px auto;
         background-color: var(--primary-accent-color);
       }
+
       &::after {
         content: "";
         display: block;
@@ -171,22 +185,24 @@
 
 
 }
+
 @media only screen and (max-width: 600px) {
   .main-container {
     padding: 10% 3%;
-    .middle-container { 
+
+    .middle-container {
       .banner {
         margin: 5%;
-        height: 28vh;
-        .salutation {
-          font-size: 4vmin;
-        }
+        height: 20vh;
+
         .primary-text {
           font-size: 10vmin;
         }
+
         .secondary-text {
           font-size: 3vmin;
         }
+
         .intro {
           font-size: 3vmin;
           width: 75vw;

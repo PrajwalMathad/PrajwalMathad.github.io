@@ -19,7 +19,7 @@
   "devDependencies": {
     "sass": "^1.54.4",
     "sass-loader": "^13.0.2",
-    "webpack" : "^5.0.0"
+    "webpack": "^5.0.0"
   },
   "scripts": {
     "predeploy": "npm run build",

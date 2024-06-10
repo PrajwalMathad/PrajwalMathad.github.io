@@ -1,0 +1,82 @@
+.skill-container {
+    display: grid;
+    grid-template-columns: auto auto;    
+    padding-top: 1rem;
+    .title {
+        margin-bottom: 0.5vh;
+        font-weight: 600;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.progress-bar {
+    width: 80%;
+    height: 1vh;
+    margin-bottom: 1.5vh;
+    border: 1px solid var(--secondary-accent-color);
+    border-radius: 5px;
+}
+
+.Javascript {
+    width: 100%;
+}
+
+.Java {
+    width: 95%;
+}
+
+.Typescript {
+    width: 100%;
+}
+
+.React {
+    width: 95%;
+}
+
+.Angular {
+    width: 92%;
+}
+
+.NodeJs {
+    width: 90%;
+}
+.MongoDB {
+    width: 88%;
+}
+.PostgreSQL {
+    width: 82%;
+}
+.Docker {
+    width: 80%;
+}
+.AWS {
+    width: 80%;
+}
+
+.percentage {
+    display: block;
+    height: 100%;
+    background-color: var(--primary-accent-color);
+    border-radius: 5px;
+    animation: progress 1500ms ease-in 1;
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .skill-container {
+        display: block;
+        .title { 
+            font-size: 2.6vmin;
+        }
+    }
+    .progress-bar {
+        height: 0.7vh;
+    }
+  }
